@@ -82,7 +82,7 @@ export default function Navigation() {
         <a
           key={id}
           href={`#${id}`}
-          className={`group flex items-center gap-4 py-3 no-underline text-[13px] font-semibold uppercase tracking-[0.1em] transition-all duration-150 max-lg:py-2 ${
+          className={`group flex items-center gap-4 py-3 no-underline text-[13px] font-semibold uppercase tracking-widest transition-all duration-150 max-lg:py-2 ${
             activeSection === id 
               ? 'text-accent-primary' 
               : 'text-text-muted hover:text-text-primary'

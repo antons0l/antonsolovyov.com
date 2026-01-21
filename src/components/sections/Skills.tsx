@@ -56,7 +56,7 @@ export default function Skills() {
                   <span className="w-[180px] text-sm font-medium text-text-secondary max-sm:w-full">{skill.name}</span>
                   <div className="flex-1 h-1.5 bg-bg-secondary rounded-sm overflow-hidden max-sm:w-full">
                     <div
-                      className="skill-progress h-full skill-progress-gradient rounded-sm origin-left animate-[skill-fill_1.5s_ease-out_forwards] [animation-play-state:paused]"
+                      className="skill-progress h-full skill-progress-gradient rounded-sm origin-left animate-skill-fill [animation-play-state:paused]"
                       style={{ width: `${skill.level}%` }}
                     />
                   </div>

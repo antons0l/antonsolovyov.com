@@ -5,7 +5,7 @@ import { Github, Linkedin, Twitter, Facebook, Mail } from '@/components/icons';
 
 export default function Sidebar() {
   return (
-    <aside className="sticky top-0 h-screen w-[420px] flex-shrink-0 py-24 pr-12 flex flex-col max-lg:relative max-lg:w-full max-lg:h-auto max-lg:py-12 max-lg:pr-0">
+    <aside className="sticky top-0 h-screen w-sidebar shrink-0 py-24 pr-12 flex flex-col max-lg:relative max-lg:w-full max-lg:h-auto max-lg:py-12 max-lg:pr-0">
       <div className="flex flex-col h-full">
         <div className="mb-12">
           <div className="relative w-[96px] h-[96px] mb-6 max-sm:w-[80px] max-sm:h-[80px]">
@@ -20,7 +20,7 @@ export default function Sidebar() {
               />
             </div>
             <div 
-              className="absolute bottom-1 right-1 w-4 h-4 bg-success border-[3px] border-bg-primary rounded-full animate-[pulse-status_2s_ease-in-out_infinite]" 
+              className="absolute bottom-1 right-1 w-4 h-4 bg-success border-[3px] border-bg-primary rounded-full animate-pulse-status" 
               title="Available for opportunities" 
             />
           </div>

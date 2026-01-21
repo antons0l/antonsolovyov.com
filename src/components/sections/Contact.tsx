@@ -67,11 +67,11 @@ export default function Contact() {
 
       {isModalOpen && (
         <div 
-          className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-[1000] animate-[fadeIn_0.2s_ease]"
+          className="fixed inset-0 bg-black/70 backdrop-blur-sm flex items-center justify-center z-1000 animate-fade-in"
           onClick={closeModal}
         >
           <div 
-            className="relative bg-bg-secondary border border-border rounded-2xl p-8 max-w-[420px] w-[90%] animate-[slideUp_0.3s_ease] shadow-[0_25px_50px_-12px_rgba(0,0,0,0.5)]"
+            className="relative bg-bg-secondary border border-border rounded-2xl p-8 max-w-sidebar w-[90%] animate-slide-up shadow-[0_25px_50px_-12px_rgba(0,0,0,0.5)]"
             onClick={(e) => e.stopPropagation()}
           >
             <button 
