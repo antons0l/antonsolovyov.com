@@ -1,0 +1,84 @@
+import Image from 'next/image';
+import Navigation from './Navigation';
+import { resumeData } from '@/data/resume';
+import { Github, Linkedin, Twitter, Facebook, Mail } from '@/components/icons';
+
+export default function Sidebar() {
+  return (
+    <aside className="sticky top-0 h-screen w-[420px] flex-shrink-0 py-24 pr-12 flex flex-col max-lg:relative max-lg:w-full max-lg:h-auto max-lg:py-12 max-lg:pr-0">
+      <div className="flex flex-col h-full">
+        <div className="mb-12">
+          <div className="relative w-[96px] h-[96px] mb-6 max-sm:w-[80px] max-sm:h-[80px]">
+            <div className="absolute -inset-1 rounded-full avatar-ring-gradient" />
+            <div className="relative w-full h-full rounded-full overflow-hidden border-[3px] border-bg-primary">
+              <Image
+                src="/avatar.png"
+                alt={resumeData.name}
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+            <div 
+              className="absolute bottom-1 right-1 w-4 h-4 bg-success border-[3px] border-bg-primary rounded-full animate-[pulse-status_2s_ease-in-out_infinite]" 
+              title="Available for opportunities" 
+            />
+          </div>
+          <h1 className="text-[42px] font-extrabold leading-[1.1] mb-3 tracking-[-0.02em] max-lg:text-4xl max-sm:text-[28px]">
+            <span className="gradient-text">{resumeData.name}</span>
+          </h1>
+          <h2 className="text-lg font-medium text-text-primary mb-4">{resumeData.title}</h2>
+          <p className="text-[15px] text-text-secondary leading-[1.6]">{resumeData.tagline}</p>
+        </div>
+
+        <Navigation />
+
+        <div className="flex gap-5 mt-8 max-sm:gap-3">
+          <a
+            href={resumeData.social.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center w-10 h-10 text-text-muted rounded-lg transition-all duration-150 hover:text-accent-primary hover:bg-bg-hover hover:-translate-y-0.5"
+            aria-label="GitHub"
+          >
+            <Github className="w-[22px] h-[22px]" />
+          </a>
+          <a
+            href={resumeData.social.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center w-10 h-10 text-text-muted rounded-lg transition-all duration-150 hover:text-accent-primary hover:bg-bg-hover hover:-translate-y-0.5"
+            aria-label="LinkedIn"
+          >
+            <Linkedin className="w-[22px] h-[22px]" />
+          </a>
+          <a
+            href={resumeData.social.twitter}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center w-10 h-10 text-text-muted rounded-lg transition-all duration-150 hover:text-accent-primary hover:bg-bg-hover hover:-translate-y-0.5"
+            aria-label="Twitter"
+          >
+            <Twitter className="w-[22px] h-[22px]" />
+          </a>
+          <a
+            href={resumeData.social.facebook}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center w-10 h-10 text-text-muted rounded-lg transition-all duration-150 hover:text-accent-primary hover:bg-bg-hover hover:-translate-y-0.5"
+            aria-label="Facebook"
+          >
+            <Facebook className="w-[22px] h-[22px]" />
+          </a>
+          <a
+            href={`mailto:${resumeData.email}`}
+            className="flex items-center justify-center w-10 h-10 text-text-muted rounded-lg transition-all duration-150 hover:text-accent-primary hover:bg-bg-hover hover:-translate-y-0.5"
+            aria-label="Email"
+          >
+            <Mail className="w-[22px] h-[22px]" />
+          </a>
+        </div>
+      </div>
+    </aside>
+  );
+}
