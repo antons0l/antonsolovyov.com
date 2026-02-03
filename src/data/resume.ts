@@ -47,7 +47,7 @@ export interface ResumeData {
 export const resumeData: ResumeData = {
   name: "Anton Solovyov",
   title: "Senior Software Engineer",
-  tagline: "Building great software solutions with modern technologies",
+  tagline: "Building scalable solutions in Web2 and Web3",
   email: "antonsolovyov@gmail.com",
   
   experience: [
@@ -58,7 +58,7 @@ export const resumeData: ResumeData = {
       url: "https://tea.xyz",
       startDate: "Mar 2024",
       endDate: "Present",
-      description: "Building front-end integrations with custom smart contracts for a Web3 platform serving 1M users. Utilized ERC-4337 Account Abstraction to onboard Web2 users and sponsor gas fees. Led spam detection efforts using zkPass KYC attestations and FingerprintJS. Implemented DAO governance functionality via Tally API.",
+      description: "Implemented front-end integrations with custom smart contracts for a Web3 platform serving 1M users. Utilized ERC-4337 Account Abstraction to onboard Web2 users and sponsor gas fees. Led spam detection efforts using zkPass KYC attestations and FingerprintJS. Implemented DAO governance functionality via Tally API.",
       technologies: ["TypeScript", "Solidity", "React", "Tailwind", "Node.js", "ethers.js", "Alchemy", "Web3Auth", "tRPC", "AWS Lambda", "PostgreSQL", "Prisma", "EVM L2"],
     },
     {

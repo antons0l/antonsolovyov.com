@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Navigation from './Navigation';
+import CheckFitCTA from '@/components/features/CheckFitCTA';
 import { resumeData } from '@/data/resume';
 import { Github, Linkedin, Twitter, Facebook, Mail } from '@/components/icons';
 
@@ -27,8 +28,13 @@ export default function Sidebar() {
           <h1 className="text-[42px] font-extrabold leading-[1.1] mb-3 tracking-[-0.02em] max-lg:text-4xl max-sm:text-[28px]">
             <span className="gradient-text">{resumeData.name}</span>
           </h1>
-          <h2 className="text-lg font-medium text-text-primary mb-4">{resumeData.title}</h2>
-          <p className="text-[15px] text-text-secondary leading-[1.6]">{resumeData.tagline}</p>
+          <h2 className="text-lg font-medium text-text-primary mb-1">{resumeData.title}</h2>
+          <p className="text-[15px] text-text-secondary leading-[1.6] mb-10">{resumeData.tagline}</p>
+
+          <p className="text-[15px] text-text-secondary leading-[1.6]">If you have a job opportunity, <br/>check how it matches my profile.</p>
+          <div className="mt-2">
+            <CheckFitCTA />
+          </div>
         </div>
 
         <Navigation />
