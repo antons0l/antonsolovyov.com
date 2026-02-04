@@ -10,6 +10,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://antonsolovyov.com"),
   title: "Anton Solovyov | Senior Full-Stack Software Engineer",
   description:
     "Anton Solovyov is a senior full-stack software engineer with expertise in React, TypeScript, Node.js, Go, and Web3. Building scalable solutions for Web2 and Web3 applications with millions of users.",
@@ -129,9 +130,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#3b82f6" />
-        <link rel="canonical" href="https://antonsolovyov.com" />
         
         {/* Machine-readable resources for AI agents */}
         <link rel="alternate" type="application/ld+json" href="/resume.json" title="Resume (JSON-LD)" />

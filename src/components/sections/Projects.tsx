@@ -14,7 +14,7 @@ export default function Projects() {
             key={project.id} 
             className="group grid grid-cols-[160px_1fr] gap-6 p-6 rounded-xl bg-transparent border border-transparent transition-all duration-300 hover:bg-bg-card hover:border-border hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)] max-lg:grid-cols-1"
           >
-            <div className="aspect-16/10 rounded-lg overflow-hidden bg-bg-secondary border border-gray-500 transition-colors duration-150 group-hover:border-gray-400 max-lg:max-w-[200px]">
+            <div className="aspect-3/2 rounded-lg overflow-hidden bg-bg-secondary border border-gray-500 transition-colors duration-150 group-hover:border-gray-400 max-lg:max-w-[200px]">
               <div className="relative w-full h-full">
                 <Image
                   src={project.image}
