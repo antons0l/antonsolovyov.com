@@ -19,6 +19,19 @@ export default function About() {
           When I&apos;m not coding, you can find me exploring the latest tech, going to conferences and meetups, or participating in hackathons.
         </p>
       </div>
+      <div className="mt-6 rounded-2xl bg-bg-secondary p-5 flex flex-col text-center">
+        <p className="text-[15px] text-text-secondary leading-[1.6]">
+          If you have a job opportunity, check how it matches my profile.
+        </p>
+        <div className="mt-3">
+          <a
+            href="/check-fit"
+            className="inline-flex items-center justify-center px-4 py-2.5 rounded-lg bg-accent-primary text-bg-primary text-md font-semibold transition-all duration-150 hover:brightness-110 cursor-pointer"
+          >
+            See if it&apos;s a match
+          </a>
+        </div>
+      </div>
     </section>
   );
 }

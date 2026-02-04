@@ -1,8 +1,6 @@
 import Image from 'next/image';
-import Navigation from './Navigation';
-import CheckFitCTA from '@/components/features/CheckFitCTA';
 import { resumeData } from '@/data/resume';
-import { Github, Linkedin, Twitter, Facebook, Mail } from '@/components/icons';
+import SidebarLinks from './SidebarLinks';
 
 export default function Sidebar() {
   return (
@@ -32,59 +30,9 @@ export default function Sidebar() {
           <h2 className="text-lg font-medium text-text-primary mb-1">{resumeData.title}</h2>
           <p className="text-[15px] text-text-secondary leading-[1.6] mb-10">{resumeData.tagline}</p>
 
-          <p className="text-[15px] text-text-secondary leading-[1.6]">If you have a job opportunity, <br/>check how it matches my profile.</p>
-          <div className="mt-2">
-            <CheckFitCTA />
-          </div>
         </div>
 
-        <Navigation />
-
-        <div className="flex gap-5 mt-8 max-sm:gap-3">
-          <a
-            href={resumeData.social.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center w-10 h-10 text-text-muted rounded-lg transition-all duration-150 hover:text-accent-primary hover:bg-bg-hover hover:-translate-y-0.5"
-            aria-label="GitHub"
-          >
-            <Github className="w-[22px] h-[22px]" />
-          </a>
-          <a
-            href={resumeData.social.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center w-10 h-10 text-text-muted rounded-lg transition-all duration-150 hover:text-accent-primary hover:bg-bg-hover hover:-translate-y-0.5"
-            aria-label="LinkedIn"
-          >
-            <Linkedin className="w-[22px] h-[22px]" />
-          </a>
-          <a
-            href={resumeData.social.twitter}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center w-10 h-10 text-text-muted rounded-lg transition-all duration-150 hover:text-accent-primary hover:bg-bg-hover hover:-translate-y-0.5"
-            aria-label="Twitter"
-          >
-            <Twitter className="w-[22px] h-[22px]" />
-          </a>
-          <a
-            href={resumeData.social.facebook}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center w-10 h-10 text-text-muted rounded-lg transition-all duration-150 hover:text-accent-primary hover:bg-bg-hover hover:-translate-y-0.5"
-            aria-label="Facebook"
-          >
-            <Facebook className="w-[22px] h-[22px]" />
-          </a>
-          <a
-            href={`mailto:${resumeData.email}`}
-            className="flex items-center justify-center w-10 h-10 text-text-muted rounded-lg transition-all duration-150 hover:text-accent-primary hover:bg-bg-hover hover:-translate-y-0.5"
-            aria-label="Email"
-          >
-            <Mail className="w-[22px] h-[22px]" />
-          </a>
-        </div>
+        <SidebarLinks />        
       </div>
     </aside>
   );

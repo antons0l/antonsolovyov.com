@@ -27,6 +27,7 @@ This is the personal portfolio website of Anton Solovyov, a software engineer wi
 - Resume (JSON-LD): https://antonsolovyov.com/resume.json
 - PDF Resume: https://antonsolovyov.com/Resume_Anton_Solovyov.pdf
 - Sitemap: https://antonsolovyov.com/sitemap.xml
+- Check Fit page: https://antonsolovyov.com/check-fit
 
 ## API Endpoints
 

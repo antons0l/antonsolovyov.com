@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState, useCallback } from 'react';
+import { usePathname } from 'next/navigation';
 
 const sections = [
   { id: 'about', label: 'About' },
@@ -11,6 +12,8 @@ const sections = [
 ];
 
 export default function Navigation() {
+  const pathname = usePathname();
+  const isHome = pathname === '/';
   const [activeSection, setActiveSection] = useState('about');
 
   const isNearBottom = useCallback(() => {
@@ -22,6 +25,10 @@ export default function Navigation() {
   }, []);
 
   useEffect(() => {
+    if (!isHome) {
+      return;
+    }
+
     const observerOptions: IntersectionObserverInit = {
       root: null,
       rootMargin: '-20% 0px -60% 0px',
@@ -61,9 +68,13 @@ export default function Navigation() {
       observer.disconnect();
       window.removeEventListener('scroll', handleScroll);
     };
-  }, [isNearBottom]);
+  }, [isHome, isNearBottom]);
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    if (!isHome) {
+      return;
+    }
+
     e.preventDefault();
     const element = document.getElementById(id);
     if (element) {
@@ -81,9 +92,9 @@ export default function Navigation() {
       {sections.map(({ id, label }) => (
         <a
           key={id}
-          href={`#${id}`}
+          href={isHome ? `#${id}` : `/#${id}`}
           className={`group flex items-center gap-4 py-3 no-underline text-[13px] font-semibold uppercase tracking-widest transition-all duration-150 max-lg:py-2 ${
-            activeSection === id 
+            isHome && activeSection === id 
               ? 'text-accent-primary' 
               : 'text-text-muted hover:text-text-primary'
           }`}
@@ -91,7 +102,7 @@ export default function Navigation() {
         >
           <span 
             className={`w-8 h-px transition-all duration-300 max-lg:hidden ${
-              activeSection === id 
+              isHome && activeSection === id 
                 ? 'w-16 bg-accent-primary' 
                 : 'bg-text-muted group-hover:w-16 group-hover:bg-text-primary'
             }`}
