@@ -1,0 +1,16 @@
+{
+  "name": "Anton Solovyov - Senior Full-Stack Software Engineer",
+  "short_name": "Anton Solovyov",
+  "description": "Senior Full-stack software engineer specializing in building exceptional digital experiences with modern web technologies, React, TypeScript, and Web3.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#3b82f6",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
