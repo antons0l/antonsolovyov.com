@@ -1,0 +1,47 @@
+# Anton Solovyov - Personal Website
+
+> Senior Full-Stack Software Engineer specializing in React, TypeScript, Node.js, Go, and Web3.
+
+This is the personal portfolio website of Anton Solovyov, a software engineer with extensive experience building scalable solutions for Web2 and Web3 applications serving millions of users.
+
+## Quick Facts
+
+- Name: Anton Solovyov
+- Role: Senior Full-Stack Software Engineer
+- Current Employer: Tea.xyz (Open-Source Software startup)
+- Location: Remote
+- Email: antonsolovyov@gmail.com
+- Years of Experience: 13+ years (since 2011)
+
+## Core Competencies
+
+- Frontend: React, Next.js, TypeScript, Angular, Tailwind CSS
+- Backend: Node.js, Go, Java, Scala, Python
+- Web3: Solidity, ethers.js, ERC-4337, Smart Contracts, EVM L2
+- Databases: PostgreSQL, MongoDB, Oracle DB, MySQL
+- Cloud: AWS, Google Cloud, Vercel, Firebase
+- DevOps: Docker, Kubernetes, Terraform, CI/CD
+
+## Machine-Readable Resources
+
+- Resume (JSON-LD): https://antonsolovyov.com/resume.json
+- PDF Resume: https://antonsolovyov.com/Resume_Anton_Solovyov.pdf
+- Sitemap: https://antonsolovyov.com/sitemap.xml
+
+## API Endpoints
+
+### Check Fit API
+Endpoint: POST https://antonsolovyov.com/api/check-fit
+Purpose: Analyze how well a job description matches Anton's qualifications.
+Request Body: { "jobDescription": "string" }
+Response: { "success": boolean, "analysis": { "matchScore": number, "summary": string, "strengths": string[], "gaps": string[] } }
+
+## Social Profiles
+
+- GitHub: https://github.com/antons0l
+- LinkedIn: https://www.linkedin.com/in/anton-solovyov/
+- Twitter: https://twitter.com/anton_solov
+
+## Contact
+
+For recruitment inquiries or collaboration opportunities, email antonsolovyov@gmail.com or use the contact form on the website.

@@ -4,3 +4,7 @@ Allow: /
 
 # Sitemap location
 Sitemap: https://antonsolovyov.com/sitemap.xml
+
+# LLM/AI agent instructions
+# See https://antonsolovyov.com/llms.txt for AI-friendly site documentation
+# See https://antonsolovyov.com/resume.json for structured resume data (JSON-LD)

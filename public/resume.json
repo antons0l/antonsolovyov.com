@@ -1,0 +1,196 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "@id": "https://antonsolovyov.com/#person",
+  "name": "Anton Solovyov",
+  "givenName": "Anton",
+  "familyName": "Solovyov",
+  "jobTitle": "Senior Full-Stack Software Engineer",
+  "description": "Senior Full-Stack Software Engineer with extensive expertise in developing software solutions for Big Tech and startups. Skilled in exploring and integrating technologies to build products on both the back-end and front-end. Product-oriented, dedicated to contributing to cross-functional teams and leveraging Agile practices.",
+  "url": "https://antonsolovyov.com",
+  "image": "https://antonsolovyov.com/avatar.png",
+  "email": "mailto:antonsolovyov@gmail.com",
+  "sameAs": [
+    "https://github.com/antons0l",
+    "https://www.linkedin.com/in/anton-solovyov/",
+    "https://twitter.com/anton_solov",
+    "https://www.facebook.com/anton.solovyov"
+  ],
+  "knowsAbout": [
+    "TypeScript",
+    "JavaScript",
+    "Go",
+    "Python",
+    "Java",
+    "Scala",
+    "SQL",
+    "React",
+    "Angular",
+    "Next.js",
+    "Node.js",
+    "Express",
+    "Tailwind CSS",
+    "NestJS",
+    "Nx",
+    "REST API",
+    "GraphQL",
+    "tRPC",
+    "Microservices",
+    "Serverless",
+    "Docker",
+    "Kubernetes",
+    "Terraform",
+    "CI/CD",
+    "PostgreSQL",
+    "MongoDB",
+    "Oracle DB",
+    "MySQL",
+    "AWS",
+    "Google Cloud",
+    "Vercel",
+    "Firebase",
+    "Prisma",
+    "Sequelize",
+    "Web3",
+    "Solidity",
+    "Smart Contracts",
+    "ERC-4337",
+    "ethers.js",
+    "Blockchain"
+  ],
+  "hasCredential": {
+    "@type": "EducationalOccupationalCredential",
+    "credentialCategory": "degree",
+    "name": "B.Sc. in Computer Science",
+    "educationalLevel": "Bachelor's Degree",
+    "recognizedBy": {
+      "@type": "CollegeOrUniversity",
+      "name": "Technion – Israel Institute of Technology",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Haifa",
+        "addressCountry": "Israel"
+      }
+    },
+    "dateCreated": "2010-08"
+  },
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Technion – Israel Institute of Technology",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Haifa",
+      "addressCountry": "Israel"
+    }
+  },
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Tea.xyz",
+    "url": "https://tea.xyz",
+    "description": "Open-Source Software startup with 1.5M users"
+  },
+  "hasOccupation": [
+    {
+      "@type": "Occupation",
+      "name": "Senior Full-Stack Developer",
+      "occupationalCategory": "15-1252.00",
+      "skills": "TypeScript, Solidity, React, Tailwind, Node.js, ethers.js, Web3Auth, tRPC, AWS Lambda, PostgreSQL, Prisma, EVM L2"
+    }
+  ],
+  "workExperience": [
+    {
+      "@type": "OrganizationRole",
+      "roleName": "Senior Full-Stack Developer",
+      "startDate": "2024-03",
+      "endDate": null,
+      "description": "Implemented front-end integrations with custom smart contracts for a Web3 platform serving 1M users. Utilized ERC-4337 Account Abstraction to onboard Web2 users and sponsor gas fees. Led spam detection efforts using zkPass KYC attestations and FingerprintJS. Implemented DAO governance functionality via Tally API. Completed a full overhaul of the app's front-end. Rebuilt the backend APIs to optimize transaction cost.",
+      "memberOf": {
+        "@type": "Organization",
+        "name": "Tea.xyz",
+        "url": "https://tea.xyz",
+        "description": "Open-Source Software startup, 1.5M users"
+      }
+    },
+    {
+      "@type": "OrganizationRole",
+      "roleName": "Senior Full-Stack Software Engineer",
+      "startDate": "2023-01",
+      "endDate": "2024-02",
+      "description": "Developed MVP of a digital bank web application for 10k users, utilizing Next.js for the frontend and a Golang API for the backend. Partnered with the risk management team to automate the intake of financial transaction data with Unit21 API. Deployed batch jobs on AWS Lambda as part of the effort to remove legacy code.",
+      "memberOf": {
+        "@type": "Organization",
+        "name": "Productfy",
+        "description": "B2B fintech platform for corporate card management"
+      }
+    },
+    {
+      "@type": "OrganizationRole",
+      "roleName": "Lead Software Developer",
+      "startDate": "2022-02",
+      "endDate": "2023-01",
+      "description": "Worked with the CTO to build the gaming portal MVP using React/Tailwind. Implemented data scraping with OpenSea, 0x, and Rarible APIs for the NFT marketplace. Expanded the customer base by integrating MetaMask wallet sign-in. Built a Discord bot to collect and analyze user statistics. Increased daily user traffic by 30% through improving the website's SEO.",
+      "memberOf": {
+        "@type": "Organization",
+        "name": "Rainmaker Games",
+        "url": "https://rmg.io/",
+        "description": "Gamers social platform startup"
+      }
+    },
+    {
+      "@type": "OrganizationRole",
+      "roleName": "Senior Software Developer",
+      "startDate": "2020-01",
+      "endDate": "2022-01",
+      "description": "Launched Public/OAuth API gateway project with Swagger documentation and led a team of 3 developers. Achieved API downtime of less than 0.1% by configuring Datadog production monitoring and alerts. Increased sales by 90% through implementing the Coinbase wallet as the website's payment method. Hired and onboarded new developers, led knowledge-transfer sessions, and conducted peer reviews.",
+      "memberOf": {
+        "@type": "Organization",
+        "name": "Rally",
+        "description": "Monetization platform for creators, 100k users"
+      }
+    },
+    {
+      "@type": "OrganizationRole",
+      "roleName": "Software Developer",
+      "startDate": "2011-03",
+      "endDate": "2019-08",
+      "description": "Developed, customized and maintained software products for large telecom operators in Canada and LATAM. Gained experience working with corporate clients to address their specific business needs. Analyzed and investigated production failures while improving the performance of key system components.",
+      "memberOf": {
+        "@type": "Organization",
+        "name": "Amdocs",
+        "description": "Multinational B2B company"
+      }
+    }
+  ],
+  "makesOffer": [
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Full-Stack Development",
+        "description": "End-to-end web application development using modern technologies"
+      }
+    },
+    {
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": "Web3 Development",
+        "description": "Smart contract integration, DeFi, and blockchain solutions"
+      }
+    }
+  ],
+  "seeks": {
+    "@type": "Demand",
+    "description": "Senior or Staff Software Engineering roles, particularly in Web3, fintech, or high-growth startups"
+  },
+  "mainEntityOfPage": {
+    "@type": "ProfilePage",
+    "@id": "https://antonsolovyov.com",
+    "dateCreated": "2024-01-01",
+    "dateModified": "2025-02-01",
+    "primaryImageOfPage": {
+      "@type": "ImageObject",
+      "url": "https://antonsolovyov.com/avatar.png"
+    }
+  }
+}

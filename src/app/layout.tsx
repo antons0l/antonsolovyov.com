@@ -90,9 +90,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Minimal inline Person data - full details available at /resume.json
   const personStructuredData = {
     "@context": "https://schema.org",
     "@type": "Person",
+    "@id": "https://antonsolovyov.com/#person",
     name: "Anton Solovyov",
     jobTitle: "Senior Full-Stack Software Engineer",
     description:
@@ -106,36 +108,8 @@ export default function RootLayout({
       "https://twitter.com/anton_solov",
       "https://www.facebook.com/anton.solovyov",
     ],
-    worksFor: {
-      "@type": "Organization",
-      name: "Tea.xyz",
-      url: "https://tea.xyz",
-    },
-    knowsAbout: [
-      "React",
-      "TypeScript",
-      "Node.js",
-      "Go",
-      "Web3",
-      "Blockchain",
-      "Smart Contracts",
-      "Solidity",
-      "AWS",
-      "PostgreSQL",
-      "MongoDB",
-      "GraphQL",
-      "Next.js",
-      "Fintech",
-      "Docker",
-      "Terraform",
-      "CI/CD",
-    ],
-    hasOccupation: {
-      "@type": "Occupation",
-      name: "Software Engineer",
-      occupationalCategory: "15-1252.00",
-      skills: "React, TypeScript, Node.js, Go, Web3, AWS, Docker",
-    },
+    // Full resume data available at:
+    mainEntityOfPage: "https://antonsolovyov.com/resume.json",
   };
 
   const websiteStructuredData = {
@@ -158,6 +132,11 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#3b82f6" />
         <link rel="canonical" href="https://antonsolovyov.com" />
+        
+        {/* Machine-readable resources for AI agents */}
+        <link rel="alternate" type="application/ld+json" href="/resume.json" title="Resume (JSON-LD)" />
+        <link rel="author" href="/resume.json" />
+        <link rel="help" href="/llms.txt" />
 
         {/* Structured Data - Person */}
         <Script
