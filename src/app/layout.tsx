@@ -50,7 +50,7 @@ export const metadata: Metadata = {
     siteName: "Anton Solovyov",
     images: [
       {
-        url: "/avatar.png",
+        url: "/avatar.jpg",
         width: 1200,
         height: 630,
         alt: "Anton Solovyov - Senior Full-Stack Software Engineer",
@@ -63,7 +63,7 @@ export const metadata: Metadata = {
     description:
       "Senior full-stack software engineer specializing in React, TypeScript, Node.js, Go, and Web3.",
     creator: "@anton_solov",
-    images: ["/avatar.png"],
+    images: ["/avatar.jpg"],
   },
   robots: {
     index: true,
@@ -77,8 +77,8 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/icon.svg",
-    apple: "/apple-icon.svg",
+    icon: "/favicon.svg",
+    apple: "/favicon.svg",
   },
   manifest: "/manifest.json",
   alternates: {
@@ -104,7 +104,7 @@ export default function RootLayout({
     description:
       "Senior full-stack software engineer specializing in React, TypeScript, Node.js, Go, and Web3. Building scalable solutions for millions of users in Web2 and Web3 applications.",
     url: "https://antonsolovyov.com",
-    image: "https://antonsolovyov.com/avatar.png",
+    image: "https://antonsolovyov.com/avatar.jpg",
     email: "antonsolovyov@gmail.com",
     sameAs: [
       "https://github.com/antons0l",

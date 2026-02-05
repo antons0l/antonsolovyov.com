@@ -11,7 +11,7 @@ export default function Sidebar() {
             <div className="absolute -inset-1 rounded-full avatar-ring-gradient" />
             <div className="relative w-full h-full rounded-full overflow-hidden border-[3px] border-bg-primary">
               <Image
-                src="/avatar.png"
+                src="/avatar.jpg"
                 alt={resumeData.name}
                 fill
                 sizes="(max-width: 640px) 80px, 96px"

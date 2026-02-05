@@ -8,7 +8,7 @@
   "jobTitle": "Senior Full-Stack Software Engineer",
   "description": "Senior Full-Stack Software Engineer with extensive expertise in developing software solutions for Big Tech and startups. Skilled in exploring and integrating technologies to build products on both the back-end and front-end. Product-oriented, dedicated to contributing to cross-functional teams and leveraging Agile practices.",
   "url": "https://antonsolovyov.com",
-  "image": "https://antonsolovyov.com/avatar.png",
+  "image": "https://antonsolovyov.com/avatar.jpg",
   "email": "mailto:antonsolovyov@gmail.com",
   "sameAs": [
     "https://github.com/antons0l",
@@ -190,7 +190,7 @@
     "dateModified": "2025-02-01",
     "primaryImageOfPage": {
       "@type": "ImageObject",
-      "url": "https://antonsolovyov.com/avatar.png"
+      "url": "https://antonsolovyov.com/avatar.jpg"
     }
   }
 }
