@@ -77,10 +77,6 @@ Technion – Israel Institute of Technology, Haifa, Israel     Sep 2006 – Aug 
 B.Sc. in Computer Science 
 `;
 
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
-
 /**
  * CheckFit API Endpoint
  *
@@ -120,6 +116,10 @@ export async function POST(request: NextRequest): Promise<NextResponse<CheckFitR
         { status: 500 }
       );
     }
+
+    const openai = new OpenAI({
+      apiKey: process.env.OPENAI_API_KEY,
+    });
 
     const systemPrompt = [
       'You are an expert technical recruiter and hiring manager.',
