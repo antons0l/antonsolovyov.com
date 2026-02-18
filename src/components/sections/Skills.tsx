@@ -22,7 +22,7 @@ export default function Skills() {
             skillItems.forEach((item, index) => {
               setTimeout(() => {
                 item.classList.add('skill-animate');
-              }, index * 100);
+              }, index * 90);
             });
             observer.unobserve(entry.target);
           }
@@ -31,21 +31,16 @@ export default function Skills() {
       { threshold: 0.2 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
+    if (sectionRef.current) observer.observe(sectionRef.current);
     return () => observer.disconnect();
   }, []);
 
   return (
     <section id="skills" className="mb-[120px] scroll-mt-24" ref={sectionRef}>
-      <h2 className="flex items-center gap-3 text-[28px] font-bold text-text-primary mb-8 max-sm:text-[22px]">        
-        Skills & Technologies
-      </h2>
-      <div className="grid gap-10">
+      <h2 className="section-title">Skills & technologies</h2>
+      <div className="grid gap-8">
         {resumeData.skillCategories.map((category) => (
-          <div key={category.id} className="bg-bg-card border border-border rounded-2xl p-7">
+          <div key={category.id} className="content-card glass-panel rounded-2xl p-7">
             <h3 className="flex items-center gap-3 text-base font-semibold text-text-primary mb-6">
               {iconMap[category.icon] || <Cube className="w-5 h-5 text-accent-primary" />}
               {category.name}

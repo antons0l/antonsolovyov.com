@@ -5,22 +5,21 @@ import { Github, ExternalLinkIcon, Star } from '@/components/icons';
 export default function Projects() {
   return (
     <section id="projects" className="mb-[120px] scroll-mt-24">
-      <h2 className="flex items-center gap-3 text-[28px] font-bold text-text-primary mb-8 max-sm:text-[22px]">
-        Pet Projects
-      </h2>
-      <div className="flex flex-col gap-6">
+      <h2 className="section-title">Pet projects</h2>
+
+      <div className="flex flex-col gap-5">
         {resumeData.projects.map((project) => (
-          <article 
-            key={project.id} 
-            className="group grid grid-cols-[160px_1fr] gap-6 p-6 rounded-xl bg-transparent border border-transparent transition-all duration-300 hover:bg-bg-card hover:border-border hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)] max-lg:grid-cols-1"
+          <article
+            key={project.id}
+            className="group content-card content-card-hover grid grid-cols-[170px_1fr] gap-6 p-6 max-lg:grid-cols-1"
           >
-            <div className="aspect-3/2 rounded-lg overflow-hidden bg-bg-secondary border border-gray-500 transition-colors duration-150 group-hover:border-gray-400 max-lg:max-w-[200px]">
+            <div className="aspect-3/2 rounded-xl overflow-hidden bg-bg-secondary border border-border transition-colors duration-150 group-hover:border-accent-primary/40 max-lg:max-w-[220px]">
               <div className="relative w-full h-full">
                 <Image
                   src={project.image}
                   alt={`${project.title} screenshot`}
                   fill
-                  sizes="(max-width: 1024px) 200px, 160px"
+                  sizes="(max-width: 1024px) 220px, 170px"
                   className="object-cover"
                 />
               </div>
@@ -67,19 +66,16 @@ export default function Projects() {
                   )}
                 </div>
               </div>
-              <p className="text-sm text-text-secondary leading-[1.7] mb-4">{project.description}</p>
+              <p className="text-sm text-text-secondary leading-[1.75] mb-4">{project.description}</p>
               <div className="flex flex-wrap gap-2">
                 {project.technologies.map((tech) => (
-                  <span 
-                    key={tech} 
-                    className="px-3 py-1 rounded-full text-xs font-medium bg-accent-primary/10 text-accent-primary transition-colors duration-150 hover:bg-accent-primary/20"
-                  >
+                  <span key={tech} className="pill-tag">
                     {tech}
                   </span>
                 ))}
               </div>
               {project.award && (
-                <div className="inline-flex items-center gap-1.5 mt-3 px-3 py-1.5 bg-linear-to-r from-yellow-500/20 to-yellow-500/10 border border-yellow-500/30 rounded-full text-xs font-semibold text-award">
+                <div className="inline-flex items-center gap-1.5 mt-4 px-3 py-1.5 bg-linear-to-r from-yellow-500/20 to-yellow-500/10 border border-yellow-500/30 rounded-full text-xs font-semibold text-award">
                   <Star className="w-3.5 h-3.5" />
                   <span>{project.award}</span>
                 </div>
