@@ -53,9 +53,9 @@ Golang API for the back-end.
 ● Partnered with the risk management team to automate the intake of financial transaction data with Unit21 API. 
 ● Deployed batch jobs on AWS Lambda as part of the effort to remove legacy code. 
  
-Rainmaker Games (Remote) - Gamers social platform startup     Feb 2022 – Jan 2023 
+Prism (Remote) - Social network startup    Feb 2022 – Jan 2023 
 Lead Software Developer 
-● Worked with the CTO to build the gaming portal MVP using React/Tailwind. 
+● Worked with the CTO to build the MVP using React/Tailwind. 
 ● Built a Discord bot to collect and analyze user statistics and improve user engagement. 
 ● Increased daily user traffic by 30% through improving the website’s SEO. 
  

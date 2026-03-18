@@ -128,12 +128,12 @@
       "roleName": "Lead Software Developer",
       "startDate": "2022-02",
       "endDate": "2023-01",
-      "description": "Worked with the CTO to build the gaming portal MVP using React/Tailwind. Implemented data scraping with OpenSea, 0x, and Rarible APIs for the NFT marketplace. Expanded the customer base by integrating MetaMask wallet sign-in. Built a Discord bot to collect and analyze user statistics. Increased daily user traffic by 30% through improving the website's SEO.",
+      "description": "Worked with the CTO to build the MVP using React/Tailwind. Implemented data scraping with OpenSea, 0x, and Rarible APIs for the NFT marketplace. Expanded the customer base by integrating MetaMask wallet sign-in. Built a Discord bot to collect and analyze user statistics. Increased daily user traffic by 30% through improving the website's SEO.",
       "memberOf": {
         "@type": "Organization",
-        "name": "Rainmaker Games",
+        "name": "Prism",
         "url": "https://rmg.io/",
-        "description": "Gamers social platform startup"
+        "description": "Social network startup"
       }
     },
     {
