@@ -4,11 +4,11 @@
   "description": "Senior Full-stack software engineer specializing in building exceptional digital experiences with modern web technologies, React, TypeScript, and Web3.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0a0a0a",
-  "theme_color": "#3b82f6",
+  "background_color": "#faf8f5",
+  "theme_color": "#faf8f5",
   "icons": [
     {
-      "src": "/icon.svg",
+      "src": "/favicon.svg",
       "sizes": "any",
       "type": "image/svg+xml"
     }

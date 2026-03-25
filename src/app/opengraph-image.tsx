@@ -14,7 +14,7 @@ export default async function Image() {
       <div
         style={{
           fontSize: 128,
-          background: 'linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 100%)',
+          background: '#faf8f5',
           width: '100%',
           height: '100%',
           display: 'flex',
@@ -22,6 +22,7 @@ export default async function Image() {
           alignItems: 'center',
           justifyContent: 'center',
           padding: '80px',
+          position: 'relative',
         }}
       >
         <div
@@ -36,10 +37,9 @@ export default async function Image() {
             style={{
               fontSize: 72,
               fontWeight: 'bold',
-              background: 'linear-gradient(90deg, #60a5fa 0%, #a78bfa 100%)',
-              backgroundClip: 'text',
-              WebkitBackgroundClip: 'text',
-              color: 'transparent',
+              fontStyle: 'italic',
+              fontFamily: 'Georgia, Times New Roman, serif',
+              color: '#1a1714',
               margin: 0,
               marginBottom: 20,
             }}
@@ -49,7 +49,7 @@ export default async function Image() {
           <p
             style={{
               fontSize: 36,
-              color: '#e5e7eb',
+              color: '#b85a30',
               margin: 0,
               marginBottom: 10,
             }}
@@ -59,13 +59,23 @@ export default async function Image() {
           <p
             style={{
               fontSize: 28,
-              color: '#9ca3af',
+              color: '#6b6560',
               margin: 0,
             }}
           >
             React • TypeScript • Node.js • Go • Web3
           </p>
         </div>
+        <div
+          style={{
+            position: 'absolute',
+            bottom: 0,
+            left: 0,
+            right: 0,
+            height: 6,
+            background: '#b85a30',
+          }}
+        />
       </div>
     ),
     {

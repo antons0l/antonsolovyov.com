@@ -1,61 +1,29 @@
 @import "tailwindcss";
 
-/* ===== Custom Theme Configuration ===== */
 @theme {
-  /* Colors */
-  --color-bg-primary: #0a0f1a;
-  --color-bg-secondary: #0f172a;
-  --color-bg-card: rgba(15, 23, 42, 1);
-  --color-bg-hover: rgba(30, 41, 59, 0.5);
-  
-  --color-text-primary: #e2e8f0;
-  --color-text-secondary: #94a3b8;
-  --color-text-muted: #64748b;
-  
-  --color-accent-primary: #06b6d4;
-  --color-accent-secondary: #8b5cf6;
-  --color-accent-tertiary: #ec4899;
-  
-  --color-border: rgba(148, 163, 184, 0.1);
-  --color-success: #22c55e;
-  --color-error: #ef4444;
-  --color-award: #fbbf24;
-  
-  /* Font families */
-  --font-sans: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
-  
-  /* Custom spacing */
-  --spacing-sidebar: 420px;
+  --color-bg-primary: #faf8f5;
+  --color-bg-secondary: #f0ede8;
+  --color-bg-card: rgba(240, 237, 232, 0.6);
+  --color-bg-hover: rgba(26, 23, 20, 0.04);
+
+  --color-text-primary: #1a1714;
+  --color-text-secondary: #6b6560;
+  --color-text-muted: #9c9590;
+
+  --color-accent-primary: #b85a30;
+
+  --color-border: rgba(26, 23, 20, 0.1);
+  --color-success: #2d6a4f;
+  --color-error: #c1432e;
+  --color-award: #b8860b;
+
+  --font-sans: var(--font-dm-sans), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --spacing-sidebar: 380px;
   --spacing-content-max: 680px;
-  
-  /* Animations */
-  --animate-rotate: rotate 4s linear infinite;
-  --animate-pulse-status: pulse-status 2s ease-in-out infinite;
-  --animate-gradient-shift: gradient-shift 8s ease infinite;
-  --animate-skill-fill: skill-fill 1.5s ease-out forwards;
-  --animate-fade-in: fadeIn 0.2s ease;
-  --animate-slide-up: slideUp 0.3s ease;
-}
 
-/* ===== Keyframes ===== */
-@keyframes rotate {
-  to { transform: rotate(360deg); }
-}
-
-@keyframes pulse-status {
-  0%, 100% { opacity: 1; transform: scale(1); }
-  50% { opacity: 0.8; transform: scale(1.1); }
-}
-
-@keyframes gradient-shift {
-  0%, 100% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-}
-
-@keyframes skill-fill {
-  from { transform: scaleX(0); }
-  to { transform: scaleX(1); }
+  --animate-fade-in: fadeIn 0.2s ease-out;
+  --animate-slide-up: slideUp 0.3s ease-out;
 }
 
 @keyframes fadeIn {
@@ -66,15 +34,14 @@
 @keyframes slideUp {
   from {
     opacity: 0;
-    transform: translateY(20px) scale(0.95);
+    transform: translateY(12px);
   }
   to {
     opacity: 1;
-    transform: translateY(0) scale(1);
+    transform: translateY(0);
   }
 }
 
-/* ===== Base Styles ===== */
 @layer base {
   *, *::before, *::after {
     box-sizing: border-box;
@@ -85,6 +52,17 @@
   html {
     scroll-behavior: smooth;
     scroll-padding-top: 100px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      transition-duration: 0.01ms !important;
+    }
   }
 
   body {
@@ -103,46 +81,9 @@
   }
 }
 
-/* ===== Utility Classes ===== */
 @layer utilities {
-  .gradient-text {
-    background: linear-gradient(135deg, var(--color-text-primary) 0%, var(--color-accent-primary) 50%, var(--color-accent-secondary) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    background-size: 200% 200%;
-    animation: var(--animate-gradient-shift);
-  }
-
-  .avatar-initials-gradient {
-    background: linear-gradient(135deg, var(--color-accent-primary), var(--color-accent-secondary));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-  }
-
-  .avatar-ring-gradient {
-    background: linear-gradient(135deg, var(--color-accent-primary), var(--color-accent-secondary));
-    animation: var(--animate-rotate);
-  }
-
-  .skill-progress-gradient {
-    background: linear-gradient(90deg, var(--color-accent-primary), var(--color-accent-secondary));
-  }
-
-  .project-image-gradient {
-    background: linear-gradient(135deg, rgba(6, 182, 212, 0.1), rgba(139, 92, 246, 0.1));
-  }
-
-  .modal-icon-gradient {
-    background: linear-gradient(135deg, rgba(6, 182, 212, 0.2), rgba(139, 92, 246, 0.2));
-  }
-
-  .background-gradient {
-    background: 
-      radial-gradient(ellipse 80% 50% at 50% -20%, rgba(6, 182, 212, 0.15), transparent),
-      radial-gradient(ellipse 60% 40% at 100% 100%, rgba(139, 92, 246, 0.1), transparent),
-      radial-gradient(ellipse 50% 30% at 0% 80%, rgba(236, 72, 153, 0.08), transparent);
+  .highlight-link-underline {
+    position: relative;
   }
 
   .highlight-link-underline::after {
@@ -161,23 +102,5 @@
   .highlight-link-underline:hover::after {
     transform: scaleX(1);
     transform-origin: left;
-  }
-
-  .contact-button-bg::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: var(--color-accent-primary);
-    transform: translateX(-100%);
-    transition: transform 300ms ease;
-    z-index: -1;
-  }
-
-  .contact-button-bg:hover::before {
-    transform: translateX(0);
-  }
-
-  .skill-animate .skill-progress {
-    animation-play-state: running;
   }
 }

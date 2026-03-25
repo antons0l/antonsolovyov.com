@@ -16,7 +16,7 @@ export default function SidebarLinks({ className }: SidebarLinksProps) {
           href={resumeData.social.github}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center w-10 h-10 text-text-muted rounded-lg transition-all duration-150 hover:text-accent-primary hover:bg-bg-hover hover:-translate-y-0.5"
+          className="flex items-center justify-center w-11 h-11 text-text-muted rounded-lg transition-colors duration-150 hover:text-accent-primary hover:bg-bg-hover"
           aria-label="GitHub"
         >
           <Github className="w-[22px] h-[22px]" />
@@ -25,7 +25,7 @@ export default function SidebarLinks({ className }: SidebarLinksProps) {
           href={resumeData.social.linkedin}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center w-10 h-10 text-text-muted rounded-lg transition-all duration-150 hover:text-accent-primary hover:bg-bg-hover hover:-translate-y-0.5"
+          className="flex items-center justify-center w-11 h-11 text-text-muted rounded-lg transition-colors duration-150 hover:text-accent-primary hover:bg-bg-hover"
           aria-label="LinkedIn"
         >
           <Linkedin className="w-[22px] h-[22px]" />
@@ -34,7 +34,7 @@ export default function SidebarLinks({ className }: SidebarLinksProps) {
           href={resumeData.social.twitter}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center w-10 h-10 text-text-muted rounded-lg transition-all duration-150 hover:text-accent-primary hover:bg-bg-hover hover:-translate-y-0.5"
+          className="flex items-center justify-center w-11 h-11 text-text-muted rounded-lg transition-colors duration-150 hover:text-accent-primary hover:bg-bg-hover"
           aria-label="Twitter"
         >
           <Twitter className="w-[22px] h-[22px]" />
@@ -43,14 +43,14 @@ export default function SidebarLinks({ className }: SidebarLinksProps) {
           href={resumeData.social.facebook}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center w-10 h-10 text-text-muted rounded-lg transition-all duration-150 hover:text-accent-primary hover:bg-bg-hover hover:-translate-y-0.5"
+          className="flex items-center justify-center w-11 h-11 text-text-muted rounded-lg transition-colors duration-150 hover:text-accent-primary hover:bg-bg-hover"
           aria-label="Facebook"
         >
           <Facebook className="w-[22px] h-[22px]" />
         </a>
         <a
           href={`mailto:${resumeData.email}`}
-          className="flex items-center justify-center w-10 h-10 text-text-muted rounded-lg transition-all duration-150 hover:text-accent-primary hover:bg-bg-hover hover:-translate-y-0.5"
+          className="flex items-center justify-center w-11 h-11 text-text-muted rounded-lg transition-colors duration-150 hover:text-accent-primary hover:bg-bg-hover"
           aria-label="Email"
         >
           <Mail className="w-[22px] h-[22px]" />

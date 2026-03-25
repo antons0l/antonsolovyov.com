@@ -5,16 +5,16 @@ import { Github, ExternalLinkIcon, Star } from '@/components/icons';
 export default function Projects() {
   return (
     <section id="projects" className="mb-[120px] scroll-mt-24">
-      <h2 className="flex items-center gap-3 text-[28px] font-bold text-text-primary mb-8 max-sm:text-[22px]">
-        Pet Projects
+      <h2 className="text-2xl font-semibold text-text-primary mb-8 max-sm:text-xl">
+        Projects
       </h2>
       <div className="flex flex-col gap-6">
         {resumeData.projects.map((project) => (
           <article 
             key={project.id} 
-            className="group grid grid-cols-[160px_1fr] gap-6 p-6 rounded-xl bg-transparent border border-transparent transition-all duration-300 hover:bg-bg-card hover:border-border hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(0,0,0,0.3)] max-lg:grid-cols-1"
+            className="group grid grid-cols-[160px_1fr] gap-6 p-6 -mx-6 rounded-lg transition-colors duration-200 hover:bg-bg-hover max-lg:grid-cols-1 max-lg:mx-0"
           >
-            <div className="aspect-3/2 rounded-lg overflow-hidden bg-bg-secondary border border-gray-500 transition-colors duration-150 group-hover:border-gray-400 max-lg:max-w-[200px]">
+            <div className="aspect-3/2 rounded-lg overflow-hidden bg-bg-secondary border border-border max-lg:max-w-[200px]">
               <div className="relative w-full h-full">
                 <Image
                   src={project.image}
@@ -72,7 +72,7 @@ export default function Projects() {
                 {project.technologies.map((tech) => (
                   <span 
                     key={tech} 
-                    className="px-3 py-1 rounded-full text-xs font-medium bg-accent-primary/10 text-accent-primary transition-colors duration-150 hover:bg-accent-primary/20"
+                    className="px-2.5 py-1 rounded text-xs font-medium bg-bg-secondary text-text-secondary"
                   >
                     {tech}
                   </span>

@@ -4,19 +4,14 @@ import { ExternalLink, Download } from '@/components/icons';
 export default function Experience() {
   return (
     <section id="experience" className="mb-[120px] scroll-mt-24">
-      <h2 className="flex items-center gap-3 text-[28px] font-bold text-text-primary mb-2 max-sm:text-[22px]">        
-        Professional Experience
+      <h2 className="text-2xl font-semibold text-text-primary mb-8 max-sm:text-xl">
+        Experience
       </h2>
-      <div>        
-        <p className="mb-5 text-base">
-          Here are some of my recent roles.
-        </p>
-      </div>
       <div className="flex flex-col gap-3">
         {resumeData.experience.map((exp) => (
           <article 
             key={exp.id} 
-            className="grid grid-cols-[130px_1fr] gap-4 p-6 rounded-xl bg-transparent border border-transparent transition-all duration-300 hover:bg-bg-card hover:border-border hover:translate-x-1 max-lg:grid-cols-1"
+            className="grid grid-cols-[140px_1fr] gap-6 p-6 -mx-6 rounded-lg transition-colors duration-200 hover:bg-bg-hover max-lg:grid-cols-1 max-lg:mx-0"
           >
             <div className="text-xs font-semibold text-text-muted uppercase tracking-[0.05em] pt-1 max-lg:pt-0 max-lg:mb-2">
               <span>{exp.startDate} - </span>
@@ -48,7 +43,7 @@ export default function Experience() {
                 {exp.technologies.map((tech) => (
                   <span 
                     key={tech} 
-                    className="px-3 py-1 rounded-full text-xs font-medium bg-accent-primary/10 text-accent-primary transition-colors duration-150 hover:bg-accent-primary/20"
+                    className="px-2.5 py-1 rounded text-xs font-medium bg-bg-secondary text-text-secondary"
                   >
                     {tech}
                   </span>
@@ -60,7 +55,7 @@ export default function Experience() {
       </div>
       <a 
         href="/Resume_Anton_Solovyov.pdf" 
-        className="inline-flex items-center gap-2 mt-8 px-6 py-3 text-accent-primary no-underline font-semibold text-sm border border-accent-primary rounded-lg transition-colors duration-150 hover:bg-accent-primary/10" 
+        className="inline-flex items-center gap-2 mt-8 px-5 py-2.5 text-accent-primary no-underline font-semibold text-sm border border-accent-primary rounded-lg transition-colors duration-150 hover:bg-accent-primary hover:text-bg-primary" 
         target="_blank"
         download
       >

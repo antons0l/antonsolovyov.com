@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 
-const inter = Inter({
+const dmSans = DM_Sans({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-dm-sans",
   display: "swap",
 });
 
@@ -131,9 +131,9 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={dmSans.variable}>
       <head>
-        <meta name="theme-color" content="#3b82f6" />
+        <meta name="theme-color" content="#faf8f5" />
         
         {/* Machine-readable resources for AI agents */}
         <link rel="alternate" type="application/ld+json" href="/resume.json" title="Resume (JSON-LD)" />

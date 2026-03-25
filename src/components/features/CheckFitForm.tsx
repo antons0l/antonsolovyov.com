@@ -25,9 +25,9 @@ export default function CheckFitForm() {
   const [analysis, setAnalysis] = useState<CheckFitAnalysis | null>(null);
  
   const getMatchScoreBadgeClass = (score: number) => {
-    if (score <= 30) return 'border-red-400/40 bg-red-400/30 text-red-400';
-    if (score <= 70) return 'border-yellow-400/40 bg-yellow-400/30 text-yellow-300';
-    return 'border-green-400/40 bg-green-400/30 text-green-300';
+    if (score <= 30) return 'border-red-300 bg-red-50 text-red-700';
+    if (score <= 70) return 'border-amber-300 bg-amber-50 text-amber-700';
+    return 'border-green-300 bg-green-50 text-green-700';
   };
  
   const handleSubmit = async () => {
@@ -90,7 +90,7 @@ export default function CheckFitForm() {
         value={jobDescription}
         onChange={(event) => setJobDescription(event.target.value)}
         placeholder="Paste the job description here..."
-        className="w-full rounded-xl border border-slate-600 bg-bg-secondary/60 px-4 py-3 text-sm text-text-primary placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-accent-primary/60"
+        className="w-full rounded-xl border border-border bg-bg-secondary px-4 py-3 text-sm text-text-primary placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-accent-primary/40"
       />
 
       <div className="mt-4 flex flex-wrap items-center gap-3">
@@ -106,7 +106,7 @@ export default function CheckFitForm() {
       </div>
 
       {analysis ? (
-        <div className="mt-6 rounded-xl border border-slate-600 bg-bg-secondary/40 p-4">
+        <div className="mt-6 rounded-xl border border-border bg-bg-secondary p-4">
           <div className="flex flex-wrap items-center gap-3 mb-3">
             <span className="text-xl uppercase tracking-widest text-text-primary">
               Match score
