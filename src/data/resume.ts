@@ -110,6 +110,14 @@ export const resumeData: ResumeData = {
       url: "https://www.getcareerup.com/",
     },
     {
+      id: "outreachninja",
+      title: "Outreach Ninja",
+      description: "Personalized cold outreach generator from any website URL.",
+      technologies: ["AI", "SaaS", "Outreach Automation"],
+      image: "/projects/outreachninja.png",
+      url: "https://outreachninja.io/",
+    },
+    {
       id: "unipint",
       title: "Unipint",
       description: "Finds the sports bars to watch your sporting events",
