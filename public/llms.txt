@@ -1,26 +1,27 @@
 # Anton Solovyov - Personal Website
 
-> Senior Full-Stack Software Engineer specializing in React, TypeScript, Node.js, Go, and Web3.
+> Senior Full-Stack Software Engineer specializing in Web3, fintech, React/Next.js, and TypeScript/Go/Java systems.
 
-This is the personal portfolio website of Anton Solovyov, a software engineer with extensive experience building scalable solutions for Web2 and Web3 applications serving millions of users.
+This is the personal portfolio website of Anton Solovyov, a software engineer with a background in Web3 and fintech, focused on scalable full-stack delivery and product execution.
 
 ## Quick Facts
 
 - Name: Anton Solovyov
 - Role: Senior Full-Stack Software Engineer
-- Current Employer: Tea.xyz (Open-Source Software startup)
+- Current Employer: Tea.xyz (Open-Source Software Web3 startup)
 - Location: Remote
 - Email: antonsolovyov@gmail.com
-- Years of Experience: 13+ years (since 2011)
+- Years of Experience: 15+ years (since 2011)
 
 ## Core Competencies
 
-- Frontend: React, Next.js, TypeScript, Angular, Tailwind CSS
-- Backend: Node.js, Go, Java, Scala, Python
-- Web3: Solidity, ethers.js, ERC-4337, Smart Contracts, EVM L2
+- Frontend: React, Next.js, TypeScript, Tailwind CSS
+- Backend: Node.js, Go, Java, Scala, Python, API architecture
+- Web3: Solidity, ethers.js, Alchemy, Web3Auth, ERC-4337, EVM L2
 - Databases: PostgreSQL, MongoDB, Oracle DB, MySQL
 - Cloud: AWS, Google Cloud, Vercel, Firebase
-- DevOps: Docker, Kubernetes, Terraform, CI/CD
+- DevOps: Docker, Kubernetes, Terraform, CI/CD, serverless
+- AI Tooling: Agentic Engineering, Cursor, OpenAI API
 
 ## Machine-Readable Resources
 

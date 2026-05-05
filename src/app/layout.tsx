@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   keywords: [
     "Anton Solovyov",
     "Senior Software Engineer",
-    "Full-Stack Developer",
+    "Full-Stack Engineer",
     "React Developer",
     "TypeScript",
     "Node.js",
@@ -31,6 +31,8 @@ export const metadata: Metadata = {
     "Solidity",
     "Smart Contracts",
     "Fintech Engineer",
+    "API Architecture",
+    "Serverless",
   ],
   authors: [{ name: "Anton Solovyov", url: "https://antonsolovyov.com" }],
   creator: "Anton Solovyov",
@@ -46,7 +48,7 @@ export const metadata: Metadata = {
     url: "https://antonsolovyov.com",
     title: "Anton Solovyov | Senior Full-Stack Software Engineer",
     description:
-      "Senior full-stack software engineer specializing in React, TypeScript, Node.js, Go, and Web3. Building scalable solutions for millions of users.",
+      "Senior full-stack software engineer specializing in Web3 and fintech. Building scalable products with React/Next.js, TypeScript, Go, and Java.",
     siteName: "Anton Solovyov",
     images: [
       {
@@ -61,7 +63,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Anton Solovyov | Senior Full-Stack Software Engineer",
     description:
-      "Senior full-stack software engineer specializing in React, TypeScript, Node.js, Go, and Web3.",
+      "Senior full-stack software engineer specializing in Web3 and fintech product delivery.",
     creator: "@anton_solov",
     images: ["/avatar.jpg"],
   },
@@ -102,7 +104,7 @@ export default function RootLayout({
     name: "Anton Solovyov",
     jobTitle: "Senior Full-Stack Software Engineer",
     description:
-      "Senior full-stack software engineer specializing in React, TypeScript, Node.js, Go, and Web3. Building scalable solutions for millions of users in Web2 and Web3 applications.",
+      "Senior full-stack software engineer with a background in Web3 and fintech. Strong delivery across React/Next.js and TypeScript, Go, and Java back-end systems.",
     url: "https://antonsolovyov.com",
     image: "https://antonsolovyov.com/avatar.jpg",
     email: "antonsolovyov@gmail.com",
@@ -122,7 +124,7 @@ export default function RootLayout({
     name: "Anton Solovyov Portfolio",
     url: "https://antonsolovyov.com",
     description:
-      "Professional portfolio of Anton Solovyov, a senior full-stack software engineer specializing in modern web technologies and Web3.",
+      "Professional portfolio of Anton Solovyov, a senior full-stack software engineer specializing in Web3 and fintech systems.",
     author: {
       "@type": "Person",
       name: "Anton Solovyov",

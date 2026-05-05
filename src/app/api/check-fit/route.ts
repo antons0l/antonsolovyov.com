@@ -25,52 +25,50 @@ Anton Solovyov
          github.com/antons0l  •  antonsolovyov@gmail.com  •  linkedin.com/in/anton-solovyov   
 
 SUMMARY 
-Senior Full-Stack Software Engineer with extensive expertise in developing software solutions for Big Tech and 
-startups. Skilled in exploring and integrating technologies to build products on both the back-end and front-end. 
-Product-oriented, dedicated to contributing to cross-functional teams and leveraging Agile practices. Passionate 
-about driving team success through effective communication and impactful innovation. 
+Senior Full-Stack Software Engineer with a background in Web3 and fintech. Strong full-stack delivery across React/Next.js
+front-end and TypeScript/Go/Java back-end systems, with hands-on ownership of API architecture and serverless
+pipelines. Product-oriented engineering leader focused on team performance, delivery execution, and scalability.
  
-● TypeScript, JavaScript, Go, Python, Java, Scala, SQL 
-● React, Angular, NextJS, Node.js, Express, Tailwind CSS, NestJS, Nx 
-● API architecture (SOAP/REST/GraphQL/tRPC), microservices, serverless, lambda 
-● Docker, Kubernetes, Terraform, DevOps, CI/CD, KSH, Bash, Unix, SEO 
+● TypeScript, JavaScript, Go, Solidity, Java, Scala, Python 
+● React, Next.js, Node.js, Express, web3.js, Safe, ethers.js, Alchemy, Web3Auth, Tailwind CSS, NestJS, Nx 
+● API design (RESTful, GraphQL, tRPC), microservices, serverless, Lambda, blockchain, Web3, dApp, EVM L2 
+● Docker, Kubernetes, Terraform, Git, Jira, DevOps, CI/CD, KSH, Bash, Unix, SEO 
 ● PostgreSQL, MongoDB, Oracle DB, MySQL, Vercel, Firebase, Google Cloud, AWS, ORM (Prisma, Sequelize) 
-● Git, Jira, Linear, Perforce, Jenkins, Github, GitKraken, Bitbucket, Sourcetree 
+● Agentic Engineering, Generative AI, Cursor, Claude Code, OpenAI API
  
  
 PROFESSIONAL EXPERIENCE 
-Tea.xyz (Remote) - Open-Source Software startup, 1.5M users    Mar 2024 – Present 
-Senior Full-Stack Developer 
-● Worked with third-party vendors to integrate the latest tech solutions to meet product requirements. 
-● Completed a full overhaul of the app’s front-end. 
-● Rebuilt the backend APIs to optimize transaction cost. 
-● Implemented a voting system that allows users to vote on proposals. 
+Tea.xyz (Remote) - Open-Source Software Web3 startup, 1M users    Mar 2024 – Present 
+Lead Software Engineer 
+● Implemented ERC-4337 Account Abstraction to onboard Web2 users and sponsor gas fees. 
+● Integrated custom smart contracts into the frontend. 
+● Led spam detection initiative using zkPass KYC attestations and FingerprintJS. 
+● Owned delivery of DAO governance functionality using the Tally API, coordinating across stakeholders. 
+● Mentored engineers and set technical direction across frontend and backend systems.
  
 Productfy (Remote) - B2B fintech platform for corporate card management  Jan 2023 – Feb 2024 
 Senior Full-Stack Software Engineer 
-● Developed the MVP of a digital bank web application for 10k users, utilizing Next.js for the front-end and a 
-Golang API for the back-end. 
+● Developed the MVP of a digital banking web application for 10K users, utilizing Next.js for the front-end and a 
+Golang API for the backend. 
 ● Partnered with the risk management team to automate the intake of financial transaction data with Unit21 API. 
-● Deployed batch jobs on AWS Lambda as part of the effort to remove legacy code. 
  
-Prism (Remote) - Social network startup    Feb 2022 – Jan 2023 
+Prism (Remote) - Web3 startup    Feb 2022 – Jan 2023 
 Lead Software Developer 
-● Worked with the CTO to build the MVP using React/Tailwind. 
+● Collaborated with the CTO to define the technical roadmap and lead MVP delivery. 
+● Implemented data scraping with OpenSea, 0x, and Rarible APIs for the NFT marketplace. 
 ● Built a Discord bot to collect and analyze user statistics and improve user engagement. 
-● Increased daily user traffic by 30% through improving the website’s SEO. 
  
-Rally (Montreal, QC) - Monetization platform for creators, 100k users   Jan 2020 – Jan 2022 
-Senior Software Developer 
-● Launched Public/OAuth API gateway project with the Swagger documentation and led a team of 3 developers. 
-● Achieved API downtime of less than 0.1% by configuring Datadog production monitoring and alerts. 
-● Increased sales by 90% through implementing the Coinbase wallet as the website’s payment method. 
-● Hired and onboarded new developers, led knowledge-transfer sessions, and conducted peer reviews. 
+Rally (Montreal, QC) - Web3 startup, creator monetization platform, 100K users   Jan 2020 – Jan 2022 
+Senior Backend Software Engineer 
+● Launched the Public API gateway project with Swagger documentation and led a team of 3 engineers. 
+● Maintained API uptime above 99.9% by setting up Datadog production monitoring and alerts. 
+● Increased sales by implementing Coinbase API payments. 
+● Hired and onboarded new engineers, led knowledge transfer sessions, and conducted peer reviews. 
  
-Amdocs (Montreal, QC) - Multinational B2B company     Mar 2011 – Aug 2019 
+Amdocs (Montreal, QC) - Multinational telecom B2B company     Mar 2011 – Aug 2019 
 Software Developer 
-● Developed, customized and maintained software products for large telecom operators in Canada and LATAM. 
-● Gained experience working with corporate clients to address their specific business needs. 
-● Analyzed and investigated production failures while improving the performance of key system components. 
+● Developed, customized, and maintained software solutions for large telecom operators in Canada and LATAM. 
+● Worked closely with enterprise clients to address complex business and technical requirements. 
  
 EDUCATION 
 Technion – Israel Institute of Technology, Haifa, Israel     Sep 2006 – Aug 2010 
