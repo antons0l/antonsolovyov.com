@@ -52,12 +52,22 @@ export const resumeData: ResumeData = {
   
   experience: [
     {
+      id: "opentrade",
+      title: "Senior Software Engineer",
+      company: "OpenTrade",
+      url: "https://opentrade.io",
+      startDate: "Oct 2026",
+      endDate: "Present",
+      description: "Building stablecoin yield infrastructure for the next generation of financial services, with a focus on backend reliability, API architecture, and scalable product delivery across distributed teams.",
+      technologies: ["TypeScript", "Node.js", "React", "Next.js", "API Architecture", "Microservices", "Fintech", "Stablecoins"],
+    },
+    {
       id: "tea-xyz",
       title: "Lead Software Engineer",
       company: "Tea.xyz",
       url: "https://tea.xyz",
       startDate: "Mar 2024",
-      endDate: "Present",
+      endDate: "Sep 2026",
       description: "Implemented ERC-4337 Account Abstraction to onboard Web2 users and sponsor gas fees. Integrated custom smart contracts into the frontend. Led spam detection initiative using zkPass KYC attestations and FingerprintJS. Owned delivery of DAO governance functionality using the Tally API and mentored engineers across frontend and backend systems.",
       technologies: ["TypeScript", "Solidity", "React", "Tailwind", "Node.js", "ethers.js", "Alchemy", "Web3Auth", "tRPC", "AWS Lambda", "PostgreSQL", "Prisma", "EVM L2"],
     },

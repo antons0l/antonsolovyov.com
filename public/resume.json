@@ -92,9 +92,9 @@
   },
   "worksFor": {
     "@type": "Organization",
-    "name": "Tea.xyz",
-    "url": "https://tea.xyz",
-    "description": "Open-source software Web3 startup with 1M users"
+    "name": "OpenTrade",
+    "url": "https://opentrade.io",
+    "description": "Stablecoin yield infrastructure platform for financial services"
   },
   "hasOccupation": [
     {
@@ -107,9 +107,22 @@
   "workExperience": [
     {
       "@type": "OrganizationRole",
+      "roleName": "Senior Software Engineer",
+      "startDate": "2026-10",
+      "endDate": null,
+      "description": "Building stablecoin yield infrastructure for the next generation of financial services, with focus on backend reliability, API architecture, and scalable product delivery across distributed teams.",
+      "memberOf": {
+        "@type": "Organization",
+        "name": "OpenTrade",
+        "url": "https://opentrade.io",
+        "description": "RWA and stablecoin yield infrastructure platform"
+      }
+    },
+    {
+      "@type": "OrganizationRole",
       "roleName": "Lead Software Engineer",
       "startDate": "2024-03",
-      "endDate": null,
+      "endDate": "2026-09",
       "description": "Implemented ERC-4337 Account Abstraction to onboard Web2 users and sponsor gas fees. Integrated custom smart contracts into the frontend. Led spam detection initiative using zkPass KYC attestations and FingerprintJS. Owned delivery of DAO governance functionality using the Tally API, coordinating across stakeholders. Mentored engineers and set technical direction across frontend and backend systems.",
       "memberOf": {
         "@type": "Organization",
@@ -194,7 +207,7 @@
     "@type": "ProfilePage",
     "@id": "https://antonsolovyov.com",
     "dateCreated": "2024-01-01",
-    "dateModified": "2026-05-05",
+    "dateModified": "2026-10-23",
     "primaryImageOfPage": {
       "@type": "ImageObject",
       "url": "https://antonsolovyov.com/avatar.jpg"

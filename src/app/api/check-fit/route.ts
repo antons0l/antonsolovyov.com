@@ -38,7 +38,12 @@ pipelines. Product-oriented engineering leader focused on team performance, deli
  
  
 PROFESSIONAL EXPERIENCE 
-Tea.xyz (Remote) - Open-Source Software Web3 startup, 1M users    Mar 2024 – Present 
+OpenTrade (Remote) - Stablecoin yield infrastructure platform    Oct 2026 – Present
+Senior Software Engineer
+● Building stablecoin yield infrastructure for the next generation of financial services.
+● Focused on backend reliability, API architecture, and scalable product delivery across distributed teams.
+
+Tea.xyz (Remote) - Open-Source Software Web3 startup, 1M users    Mar 2024 – Sep 2026
 Lead Software Engineer 
 ● Implemented ERC-4337 Account Abstraction to onboard Web2 users and sponsor gas fees. 
 ● Integrated custom smart contracts into the frontend. 

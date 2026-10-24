@@ -8,7 +8,7 @@ This is the personal portfolio website of Anton Solovyov, a software engineer wi
 
 - Name: Anton Solovyov
 - Role: Senior Full-Stack Software Engineer
-- Current Employer: Tea.xyz (Open-Source Software Web3 startup)
+- Current Employer: OpenTrade (Stablecoin yield infrastructure platform)
 - Location: Remote
 - Email: antonsolovyov@gmail.com
 - Years of Experience: 15+ years (since 2011)
